@@ -1,0 +1,328 @@
+
+@font-face {
+  font-display: swap;
+  font-family: 'Google Sans Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/GoogleSansCode[wght].ttf');
+}
+
+body{
+    background-color: white;
+    overflow-x:hidden;
+
+}
+
+
+
+header {
+    display: flex;
+    width: 100%;
+    margin: auto auto;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 0;
+
+}
+
+h2 {
+    font-family: 'Google Sans Code';
+
+}
+.bouton{
+    padding: 1% 1%;
+    font-variant: small-caps; 
+    border: black solid 4px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    color: white;
+    text-align: center;
+}
+
+.bouton:hover {
+    background-color: rgba(10,10,10,0.8);
+    color: white;
+}
+
+.rejoindre {
+    color: black;
+    background-color: white;
+
+
+}
+.telecharger {
+    color: white;
+    
+    background-color: red;
+}
+a {
+    text-decoration: none;
+    
+}
+
+/* Pour telephones */
+@media only screen and (max-width:767px)
+{
+    .photo {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(31,31,31);
+    color: white;
+    padding: 50px 0px;
+
+}
+
+#gauche {
+    padding: 5%;
+}
+
+.liste-liens {
+    padding: 10%;
+    margin: 2rem auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logo-footer {
+    display: flex;
+    width: 75%;
+}
+}
+
+
+/* pour ordinateurs */
+@media only screen and (min-width: 768px) {
+
+.photo {
+    width: 50%;
+    margin: 2rem auto;
+}
+    footer {
+    padding: 50px 0px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(31,31,31);
+    color: white;
+}
+.liste-liens {
+    margin: 2rem auto;
+    flex-direction: column;
+
+}
+.logo-footer {
+    display: flex;
+    width: 30%;
+}
+
+#gauche {
+    padding: 5%;
+}
+
+}
+
+
+p {
+    font-size: 1rem;
+    color: grey;
+}
+
+h1
+{
+    color: black;
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    padding: 5%;
+}
+h3 {
+    font-size: 1.2rem;
+}
+label {
+    text-align: center;
+}
+.center {
+        text-align: center;
+
+}
+.mentions-legales {
+    font-size: 0.5rem;
+}
+hr {
+    width: 80%;
+    margin: auto auto;
+}
+.sous-partie {
+    width: 80%;
+    margin: auto auto;
+}
+@media only screen and (min-width: 768px)
+{   .contain-flex-row {
+          display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        justify-content: center;
+        margin: auto auto;
+
+}
+    .contain-flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto auto;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+.contain-flex-row {
+
+        display: block;
+        flex-direction: column;
+        gap: 4rem;
+        justify-content: center;
+        margin: auto auto;
+    }
+
+    .contain-flex-column {
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto auto;
+    }
+}
+.from-start {
+        
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+.from-end {
+        align-items: flex-end;
+    }
+.thick {
+    max-width: 256px;
+}
+.large {
+    width: 80%;
+
+}
+
+.logo-certifications {
+    width: 256px;
+    height: 144px;
+}
+.partenaires-wrap {
+    margin:  auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 3rem;
+    margin: 0 auto 4rem;
+}
+.logos-partenaires {
+    width: 256px;
+    height: 144px;
+}
+.certifications {
+    background-color: #f6f6f6;
+    justify-content: center;
+ 
+}
+
+section {
+    margin: 4rem auto;
+}
+
+.dropdown{
+    display: inline-block; 
+        margin: 2rem; 
+
+}
+.dropdown button{
+    background-color: #0084fa;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    background-color: #0084fa;
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5% 5%;
+
+    font-size: 1.5em;
+}
+.dropdown ul {
+    margin: 0 auto;
+    list-style-type: none;
+    background-color: #0084fa;
+}
+.dropdown .content{  
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    box-shadow: 2px 2px 5px #0084fa;
+
+}
+
+.dropdown-sub ul {
+   visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    box-shadow: 2px 2px 5px #0084fa;
+}
+.dropdown-sub:hover ul{
+    position:absolute;
+    left: 260px;
+    top: 100px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    background-color: #0084fa;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5% 5%;
+    font-size: 1.5em;
+}
+.dropdown:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
+}
+.dropdown:hover button{
+    background-color: blueviolet;
+}
+.dropdown a:hover{
+    background-color: blueviolet;
+}
+
+#rejoindre {
+    color: black;
+    background-color: white;
+
+
+}
+#telecharger {
+    color: white;
+    
+    background-color: red;
+}
+a {
+    text-decoration: none;
+}

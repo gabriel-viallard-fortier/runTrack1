@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(193, 194, 195);
+}
+
+header {
+    border: 2px inset #ccc;
+}
+
+.nom,
+.titre {
+    text-align: center;
+}
+
+.pres,
+.desc {
+    text-align: center;
+
+}
+
+.pres {
+    padding-bottom: 5%;
+    padding-top: 10%;
+}
+
+.desc {
+    padding-bottom: 10%;
+}
+
+.photolien {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px outset #ccc;
+}
+
+.fleche {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 40%;
+}

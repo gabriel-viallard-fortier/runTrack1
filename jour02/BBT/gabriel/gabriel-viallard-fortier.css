@@ -1,0 +1,25 @@
+body {
+    background-image: url(nil.jpeg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+
+}
+.presentation {
+
+    padding: 2%;
+    justify-content: center;
+    width: 75%;
+    margin: 30% auto;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 40px;
+
+}
+.center {
+text-align:center;
+}

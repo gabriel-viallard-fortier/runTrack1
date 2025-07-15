@@ -1,0 +1,90 @@
+.body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #bababc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile_image img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.profile_info {
+  flex: 1;
+}
+
+.profile_name {
+  margin: 0;
+  font-size: 2rem;
+  color: #1a1a1a;
+}
+
+.profile_title {
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.profile_description {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+
+h2 {
+  color: #000000;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+ul li::before {
+  content: "• ";
+  color: #030303;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 1.5rem;
+}
+
+.contact_info {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.contact_info a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.contact_info a:hover {
+  text-decoration: underline;
+}

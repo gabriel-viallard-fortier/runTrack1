@@ -1,0 +1,397 @@
+/*****************   RESET    *****************/
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/*****************   LAYOUT    *****************/
+
+body {
+    background-color: white;
+    margin: 0 auto;
+    color: rgb(93, 92, 92);
+}
+
+.container {
+    position: relative;
+    max-width: 1140px;
+    min-width: 425px;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', sans-serif;
+    overflow: hidden;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+h1 {
+    text-align: center;
+    color: #647297;
+    font-size: 3rem;
+    z-index: 5;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+main h3,
+h2 {
+    color: #c98b4b;
+}
+
+h4 {
+    color: #647297;
+    margin-bottom: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*****************   TRIANGLE    *****************/
+
+.top-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    z-index: 0;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.top-triangle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 300px solid #647297;
+    border-right: 40vw solid transparent;
+}
+
+.top-triangle::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #c98b4b;
+    border-left: 80vw solid transparent;
+}
+
+/*****************   HEADER    *****************/
+
+header {
+    grid-area: 1/1/2/2;
+}
+
+header .profile {
+    display: none;
+}
+
+header .coordonate address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+header .coordonate a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+header img {
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 10px 0px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header .contact {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(220, 234, 251);
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.hook {
+    text-align: center;
+}
+
+.hook p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.hook.sm {
+    display: none;
+}
+
+/*****************   ASIDE    *****************/
+
+aside {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    grid-area: 2/1/2/2;
+    background-color: rgb(220, 234, 251);
+    gap: 1rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+aside h3 {
+    color: #647297;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.aside-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.aside-list .icon {
+    margin-right: 0.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/*****************   MAIN    *****************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1/2/3/3;
+    background-color: whitesmoke;
+    padding: 2rem;
+    /* min-width: 680px; */
+    gap: 1rem;
+}
+
+main .profile img {
+    display: none;
+}
+
+.exp .company {
+    color: #c98b4b;
+    font-weight: normal;
+}
+
+.exp .periode {
+    font-weight: bold;
+}
+
+.exp .skills {
+    margin: 0;
+}
+
+/*****************   TIMELINE    *****************/
+
+.timeline {
+    position: relative;
+    margin-left: .5rem;
+    border-left: 2px solid #647297;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline-point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: -7px;
+    top: 0.2rem;
+    background-color: #647297;
+    border-radius: 50%;
+}
+
+/*****************   SKILLS    *****************/
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 80px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 100%;
+}
+
+.skill-item .icon {
+    font-size: 3rem;
+    line-height: 1;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-item span {
+    text-transform: uppercase;
+    display: block;
+}
+
+/*****************   COMPONENTS    *****************/
+
+.main-card {
+    background-color: rgb(220, 234, 251);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 10px 0px;
+}
+
+.aside-card {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    box-shadow:
+        inset 4px 4px 10px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 10px rgba(255, 255, 255, 0.7);
+}
+
+.icon {
+    display: inline-block;
+    width: 30px;
+}
+
+/*****************   MEDIA QUERIES    *****************/
+
+@media screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    header .contact {
+        flex-direction: row;
+        align-items: flex-start;
+        height: 300px;
+        gap: 1rem;
+        padding-bottom: 2rem;
+        background-color: #dceafb;
+    }
+
+    header .contact img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+        margin-bottom: 0;
+    }
+
+    header .profile {
+        display: block;
+    }
+
+    header .coordonate address {
+        white-space: nowrap;
+        width: fit-content;
+        flex: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hook.sm {
+        display: block;
+        height: 100%;
+        text-align: center;
+        background-color: whitesmoke;
+        padding: 2rem;
+    }
+
+    .img-container {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    main {
+        order: 2;
+    }
+
+    main .profile {
+        display: none;
+    }
+
+    aside {
+        flex-direction: row;
+        order: 3;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header .contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    aside {
+        flex-direction: column;
+    }
+
+    .aside-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    main {
+        min-width: 425px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .aside-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,267 @@
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ededed;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(84, 114, 145);
+    box-shadow: 0px 0px 15px #333;
+    border-bottom: 2px solid #fff;
+    height: 100%;
+    
+}
+
+
+
+.name{
+    color: white;
+    font-size: 1.5em;
+    width: 33%;
+    padding-left: 5%;
+    
+}
+
+.dev{
+     color: white;
+    font-size: 1.5em;
+    padding-right: 5%;
+    padding-left: 5%;
+    
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h4{
+    margin: 20px 0;
+    width: 90%;
+}
+
+section > div{
+    width: 90%;
+}
+
+.toprectangle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.photo{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+
+}
+
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+
+
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+
+.etude{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.etude-desc{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 70%;
+    margin-left: auto;
+    padding-right: 10%;
+}
+
+.etude-info{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px){
+    .toprectangle{
+        flex-direction: column;
+    }
+    .topcontainer{
+        flex-direction: column;
+    }
+    .etude{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.toprectangle {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgb(221, 245, 245);
+    gap: 20px;
+}
+
+h1 {
+    flex: 1;
+    font-size: 50px;
+}
+
+h3 {
+    flex: 1;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .toprectangle {
+        flex-direction: row;
+        width: 90%;
+        text-align: center;
+    }
+
+    .grandtitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+.photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.procon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.info {
+
+    height: auto;
+    padding: 20px;
+    width: 50%;
+    padding-left: 10%;
+
+}
+
+.moi {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    padding-right: 10%;
+}
+
+.bottomcontain{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+
+.contenu{
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc ; 
+    
+}
+
+
+
+.compet{
+    padding: 20px;
+    width: 50%;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+
+
+
+
+
+
+

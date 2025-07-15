@@ -1,0 +1,172 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.souligne {
+    border-bottom: 1px solid aquamarine;
+}
+.logo {
+    border: 4px solid blueviolet;    
+}
+.logo:hover {
+    border: 4px solid yellow;
+}
+img {
+    border-radius: 20%;
+    box-shadow: 5px 5px 5px blueviolet;
+    width: 200px; /* ou 50%, selon ton besoin */
+    height: auto;
+}
+
+img:hover {
+    box-shadow: 5px 5px 5px yellow;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-shadow: 14px 14px 14px red;
+}
+
+h1 {
+    color: yellow;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li {
+    margin: 2%;
+}
+
+.encadrement {
+    padding: 5%;
+    border-radius: 10px;
+    border: solid blueviolet 5px;
+    box-shadow: 0px 0px 25px yellow;
+}
+.encadrement:hover {
+    border: solid yellow 5px;
+    box-shadow: 0px 0px 25px blueviolet;
+}
+
+hr {
+    width: 50%;
+}
+
+.coordonnees {
+    font-size: large;
+}
+
+mark {
+    background-color: rgb(31, 31, 31);
+    color: yellow;
+}
+
+.green {
+    width: 50%;
+    margin: 0 auto;
+    background-color: brown;
+    color: yellow;
+}
+.whiteblur{
+    text-shadow: 2px 2px 2px black;
+}
+.caps {
+    font-variant: small-caps;
+}
+
+@media only screen and (max-width: 640px) {
+    .encadrement {
+        padding: 0.5%;
+        margin: 2%;
+        border: 8px solid lightblue;
+    }
+
+}
+
+@media only screen and (max-width:768px) and (orientation:landscape){
+    main {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        row-gap: 2%;
+        column-gap: 1%;
+    }
+
+    #parcours {
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+    }
+
+    #coordonnees {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+
+    #motivations {
+        grid-column: 1 / span 2;
+        grid-row: 3 / 4;
+    }
+
+    #competences {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    main {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        row-gap: 3%;
+        column-gap: 2%;
+    }
+
+    #parcours {
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+    }
+
+    #coordonnees {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+
+    #motivations {
+        grid-column: 1 / span 2;
+        grid-row: 3 / 4;
+    }
+
+    #competences {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+header {
+    background-color: rgba(128, 0, 255, 0.5);
+    width:50%;
+    margin: 3rem auto 1rem;
+    border: 4px yellow solid;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px white;
+}
+.padding-10{
+    padding: 10%;
+}

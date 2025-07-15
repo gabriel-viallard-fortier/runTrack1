@@ -1,0 +1,37 @@
+h1,h2,header {
+    text-align: center;
+}
+.blue {
+    color:cyan;
+    background-color: black;
+    width: 100%;
+}
+body {
+    color:white;
+    background-color:rgb(37, 34, 34);
+}
+/* Styles généraux pour grand écran */
+body {
+  font-size: 16px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+}
+/* Media query pour écran ≤ 768px (tablette et mobile) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .photo {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .section {
+    padding: 10px;
+  }
+  .information {
+flex-direction: column;
+  }
+}

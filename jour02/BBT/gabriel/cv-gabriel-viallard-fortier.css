@@ -1,0 +1,134 @@
+
+.cyan {
+    color: yellow;
+}
+.whiteblur {
+    text-shadow: 2px 2px 2px black;
+}
+.red {
+    color: red;
+}
+.caps {
+    font-variant: small-caps;
+}
+.center {
+    text-align: center;
+}
+.logo {
+    border: 4px solid blueviolet;    
+}
+.logo:hover {
+    border: 4px solid yellow;
+}
+img {
+    border-radius: 20%;
+    box-shadow: 5px 5px 5px blueviolet;
+    width: 200px; /* ou 50%, selon ton besoin */
+    height: auto;
+}
+html {
+    background: radial-gradient(lightblue, rgb(33, 33, 153), blueviolet);
+
+}
+body{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media screen and (max-width: 640px)
+{
+
+    .encadrement {
+        padding: 0.5%;
+        margin: 2rem auto;
+        border: 8px solid lightblue;
+        }
+}
+
+@media screen and (max-width:768px) and (orientation:landscape)
+{
+
+    main {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        row-gap: 2%;
+        column-gap: 1%;
+    }
+    #parcours{
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+    }
+    #coordonnees {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+    #motivations {
+        grid-column: 1 / span 2;
+        grid-row: 3 / 4;
+    }
+    #competences {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+@media screen and (min-width: 1024px)
+{
+    main {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        row-gap: 3%;
+        column-gap: 2%;
+    }
+    #parcours{
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+    }
+    #coordonnees {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+    #motivations {
+        grid-column: 1 / span 2;
+        grid-row: 3 / 4;
+    }
+    #competences {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+a {
+    color: orangered;
+    font-size: 26px;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-shadow: 4px 4px 4px red;
+}
+.souligne {
+    border-bottom: 2px solid yellow;
+}
+.encadrement {
+    border: 8px solid lightblue;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 1%;
+
+}
+.green {
+    color: yellow;
+}
+.coordonnees {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: yellow;
+}
+hr {
+    color: white;
+    max-width: 260px;
+}
+li {
+    margin: 4%;
+}

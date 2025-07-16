@@ -27,7 +27,7 @@ img {
     height: auto;
 }
 html {
-    background: radial-gradient(lightblue, rgb(33, 33, 153), blueviolet);
+    background: radial-gradient(black, rgb(33, 33, 153), blueviolet);
 
 }
 body{

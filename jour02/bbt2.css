@@ -1,64 +1,123 @@
-@media only screen and (orientation:landscape)
-{
+*, ::after, ::before {
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    .container-photos {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        padding: 0% 10%;
-        gap: 2rem;
-    }
-img{
-    width: 100%;
-    object-fit: cover;
-    min-height:100%;
-    border-radius: 50%;
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: radial-gradient(whitesmoke, yellow, black);
+    color: black;
+    min-width: 425px;
 }
+
+h1 {
+    text-align: center;
+    color: white;
 }
-@media only screen and (orientation:portrait)
-{
-    img {
-        width: 50%;
-        border-radius: 50%;
-    }
+
+header {
+    padding: 2rem 0;
 }
-img:hover {
-    border-radius: 20%;
+
+.header-card {
+    padding: 5%;
+    width:fit-content;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: black;
+    color: black;
+    text-shadow: 0px 0px 1px red;
 }
+
+.name {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3%;
+    margin: 2% auto;
+}
+
 .center {
     text-align: center;
 }
-body {
-    /*background: radial-gradient(black, grey, whitesmoke, white);*/
-    background: radial-gradient(rgb(200, 185, 10),rgb(10, 163, 94), rgb(24, 168, 197));
-    color: white;
 
+main {
+    padding: 2rem;
 }
-.name {
-    width: 40%;
-    margin: 0 auto;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border-radius: 40px;
-    box-shadow: 0px 10px 10px black;
-    padding: 2%;
 
-}
-.presentation {
-    margin: 0 auto;
-    padding: 4%;
-}
-a {
-    color: red;
-    text-decoration: none;
-}
-a:hover {
-    text-shadow: 0px 0px 3px yellow;
-}
 #liens {
-    width: 70%;
-    background-color: rgba(255,0,0 0.2);
-    box-shadow: 0px 10px 10px black;
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-around;
+
+    background-color: bisque;
+
+}
+
+.presentation {
+    width: 50%;
+    padding: 5%;
+    margin: 2rem auto;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+}
+
+section {
+    background-color: brown;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.container-photos {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+main > p {
+    color: black;
+}
+
+figure {
+    width:fit-content;
+    height: fit-content;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+figcaption a:hover {
+    color: lightgoldenrodyellow;
+}
+
+img {
+    max-height: 200px; 
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.shadow {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+img:active {
+    transform: scale(1);
 }

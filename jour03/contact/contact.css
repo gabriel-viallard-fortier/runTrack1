@@ -2,6 +2,10 @@ body{
     background-color: white;
     margin: 0;
     overflow-x: hidden;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2em;
 }
 
 header {
@@ -110,6 +114,7 @@ header img {
 }
 .contain-grid {
     display: grid;
+    padding: 5% 10%;
 }
 
 
@@ -237,6 +242,7 @@ fieldset {
         justify-content: center;
         text-align: justify;
         margin: auto auto;
+
         }
 
 }
@@ -282,7 +288,7 @@ fieldset {
         justify-content: center;
         text-align: justify;
         width: 100%;
-        height: 80vh;
+        padding: 1% 0%;
         margin: auto auto;
     }
 
@@ -330,7 +336,6 @@ label {
 }
 #telecharger {
     color: white;
-    
     background-color: red;
 }
 a {
@@ -459,4 +464,11 @@ select {
 }
 .dropdown a:hover{
     background-color: blueviolet;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: blue;
 }

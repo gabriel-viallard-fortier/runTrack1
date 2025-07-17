@@ -8,9 +8,8 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    align-items: center;
+    flex-wrap: wrap;
+ 
 }
 
 nav {
@@ -22,10 +21,18 @@ nav {
     padding: 0 2rem;
     box-shadow: rgba(19, 20, 22, 0.4) 0px 10px 10px -10px;
 }
-
-nav>img {
-    color: rgb(0, 98, 255);
+@media only screen and (max-width: 768px)
+{
+    nav img {
+        width: 100%;
+    }
 }
+nav img {
+    width: 80%;
+    color: rgb(0, 98, 255);
+
+}
+
 
 .image-principal {
     width: 400px;
@@ -36,8 +43,7 @@ nav>img {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
-    gap: 30px;
-    padding: 5%;
+    padding-bottom: 5%;
 }
 
 .burger {
@@ -163,7 +169,8 @@ nav>img {
 .container-image {
     width: 100%;
     background-image: url(../images/montage-categorie-cybersecu-scaled.webp);
-    background-size: contain no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     padding: 10%;
 }
@@ -256,14 +263,24 @@ nav>img {
     width: 50%;
     padding: 5%;
 }
-#sofiane {
-    border-radius: 50px;
-    @media only screen and (max-width: 767px) {
-        width: 144px;
-        height: auto;
+    @media only screen and (max-width: 1080px) {
+       #sofiane {
+            border-radius: 50px;
+
+            width: 256px;
+            height: auto;
+
     }
 }
+@media only screen and (min-width: 768px) {
+       #sofiane {
+            border-radius: 50px;
 
+            width: 400px;
+            height: auto;
+
+    }
+}
 .link-row {
     display: flex;
     flex-wrap: wrap;
@@ -279,7 +296,7 @@ nav>img {
     padding: 5%;
     background: whitesmoke;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     color: #333;
     height: 700px;
@@ -289,7 +306,7 @@ nav>img {
 .colonne2:hover a{
     transition: all 0.5s ease-out;
     transform: scaleX(1.02) scaleY(1.02);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .enjeux {
@@ -337,8 +354,11 @@ h1 {
     width: 50%;
     margin: auto auto;
 }
-
-#form-dialog:modal {
+.overflow {
+    overflow: hidden;
+}
+#form-dialog {
+    scrollbar-width: none;
     width: 600px;
     height: 800px;
     border-radius: 20px;
@@ -420,10 +440,68 @@ button[type=reset] {
     padding: 10px;
     background-color: burlywood;
     border-radius: 10px;
+    
+}
+#close {
+    position: absolute;
+    right: 20px;
 }
 
 
+/* Pour telephones */
+@media only screen and (max-width:767px)
+{
+    .photo {
+    width: 80%;
+    margin: 2rem auto;
+}
+
 footer {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(31,31,31);
+    color: white;
+    padding: 50px 0px;
+
+}
+
+#gauche {
+    padding: 5%;
+}
+
+.liste-liens {
+    padding: 10%;
+    margin: 2rem auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logo-footer {
+    margin: auto auto;
+    display: flex;
+    width: 75%;
+}
+}
+.boutonFooter {
+    padding: 1% 1%;
+    font-variant: small-caps; 
+    border: black solid 4px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    color: white;
+    text-align: center;
+}
+
+/* pour ordinateurs */
+@media only screen and (min-width: 768px) {
+
+.photo {
+    width: 50%;
+    margin: 2rem auto;
+}
+    footer {
     padding: 50px 0px;
     display: flex;
     width: 100%;
@@ -431,30 +509,79 @@ footer {
     color: white;
 }
 .liste-liens {
-    margin: 0 auto;
+    margin: 2rem auto;
     flex-direction: column;
-    justify-content: space-around;
-}
 
+}
 .logo-footer {
     display: flex;
     width: 30%;
+
 }
+
+#gauche {
+    padding: 5%;
+}
+
+}
+
+.faq-section {
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.faq-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.faq-column {
+  flex: 1 1 45%;
+}
+
+.faq-column h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.faq-column p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
 
 
 #rejoindre {
     color: black;
-    background-color: white;
+    padding: 10px 30px;
+    font-size: larger;
+    background-color: whitesmoke;
 
-    width: 140px;
-    text-align: center;
-
-
+    border-radius: 30px;
 }
 #telecharger {
     color: white;
-    width: 140px;
-    text-align: center;
+    padding: 10px 30px;
+    font-size: larger;
+    border-radius: 30px;
+
     background-color: red;
 }
 a {

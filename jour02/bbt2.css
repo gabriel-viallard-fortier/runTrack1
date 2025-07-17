@@ -99,12 +99,13 @@ figcaption a {
 }
 
 figcaption a:hover {
-    color: lightgoldenrodyellow;
+    color: blueviolet;
 }
 
 img {
-    max-height: 200px; 
-    aspect-ratio: 1;
+aspect-ratio: auto;
+    height: 256px;
+    width: 256px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
